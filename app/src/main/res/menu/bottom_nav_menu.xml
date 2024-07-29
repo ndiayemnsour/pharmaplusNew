@@ -15,5 +15,9 @@
         android:id="@+id/navigation_commande"
         android:icon="@drawable/commande"
         android:title="@string/title_commande" />
+    <item
+        android:id="@+id/navigation_stock"
+        android:icon="@drawable/stock"
+        android:title="@string/title_stock"/>
 
 </menu>

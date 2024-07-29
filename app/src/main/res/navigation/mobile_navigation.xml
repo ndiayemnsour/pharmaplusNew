@@ -22,4 +22,9 @@
         android:name="sn.unchk.pharmaplus.ui.commande.CommandeFragment"
         android:label="@string/title_commande"
         tools:layout="@layout/fragment_commande" />
+    <fragment
+        android:id="@+id/navigation_stock"
+        android:name="sn.unchk.pharmaplus.ui.StockFragment"
+        android:label="@string/title_stock"
+        tools:layout="@layout/fragment_stock"/>
 </navigation>
