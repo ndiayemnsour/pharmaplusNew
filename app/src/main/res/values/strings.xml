@@ -11,8 +11,8 @@
     <string name="signe_plus">+</string>
     <string name="identifiant">Identifiant</string>
     <string name="mot_de_passe">Mot de passe</string>
-    <string name="se_connecter">Se connecter</string>
-    <string name="mot_de_passe_oublie">Mot de passe oublié</string>
+    <string name="seconnecter">Se connecter</string>
+    <string name="mdp_oublie">Mot de passe oublié</string>
     <string name="accueil">Accueil</string>
     <string name="produit">Produits</string>
     <string name="filtrer_par_categorie">Filtrer par catégorie...</string>
@@ -21,4 +21,6 @@
     <string name="liste_commande">Liste commandes</string>
     <string name="texte_bienvenue">Bonjour Babacar,\nBienvenue dans Pharmaplus !</string>
     <string name="meilleures_ventes">Meilleures ventes</string>
+    <string name="toggle_password_visibility">toggle password visibility</string>
+    <string name="title_activity_home">HomeActivity</string>
 </resources>

@@ -50,9 +50,7 @@
         tools:text="@string/title_connexion"
         tools:visibility="visible" />
 
-    <!-- Identifiant -->
 
-    <!-- Mot de passe -->
 
     <TextView
         android:layout_width="wrap_content"
@@ -100,11 +98,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etIdentifiant"
-        app:layout_constraintWidth_percent="0.8" />
+        app:layout_constraintWidth_percent="0.8"
+        />
 
-    <!-- Se connecter Button -->
 
-    <!-- Mot de passe oublié Button -->
 
     <Button
         android:id="@+id/btnLogin"
@@ -115,7 +112,7 @@
         android:background="@drawable/rounded_button"
         android:text="@string/seconnecter"
         android:textColor="@android:color/white"
-        android:textStyle="bold"
+        android:textStyle="normal"
         android:textSize="@dimen/texe_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -133,7 +130,7 @@
         android:text="@string/mdp_oublie"
         android:textColor="@android:color/white"
         android:textSize="@dimen/texe_button"
-        android:textStyle="bold"
+        android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
@@ -152,4 +149,16 @@
         app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+    <ImageView
+        android:id="@+id/ivTogglePasswordVisibility"
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:contentDescription="@string/toggle_password_visibility"
+        android:src="@drawable/ic_visibility"
+        app:layout_constraintBottom_toBottomOf="@+id/etPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintStart_toStartOf="@+id/etPassword"
+        app:layout_constraintTop_toTopOf="@+id/etPassword" />
 </androidx.constraintlayout.widget.ConstraintLayout>
