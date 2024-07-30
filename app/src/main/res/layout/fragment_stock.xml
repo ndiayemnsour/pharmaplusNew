@@ -9,9 +9,10 @@
 
     <SearchView
         android:id="@+id/search_stock"
-        android:layout_width="360dp"
+        android:layout_width="match_parent"
         android:layout_height="54dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:background="@drawable/search"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,9 +23,10 @@
 
     <EditText
         android:id="@+id/etFilter"
-        android:layout_width="360dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="5dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,9 +40,10 @@
     <ListView
 
         android:id="@+id/idProduit"
-        android:layout_width="370dp"
+        android:layout_width="match_parent"
         android:layout_height="588dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="5dp"
         android:background="@color/white"

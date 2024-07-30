@@ -23,8 +23,8 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var btnLogin: Button
     private lateinit var ivTogglePasswordVisibility: ImageView
     private var isPasswordVisible = false
-    val email = "zocod3r@gmail.com"
-    val password = "Zo@pharma+24"
+    val email = "zo@gmail.com"
+    val password = "123"
     //Auth with firebase
     private lateinit var auth: FirebaseAuth
 
