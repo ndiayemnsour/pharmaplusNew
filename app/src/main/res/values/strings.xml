@@ -23,4 +23,5 @@
     <string name="meilleures_ventes">Meilleures ventes</string>
     <string name="toggle_password_visibility">toggle password visibility</string>
     <string name="title_activity_home">HomeActivity</string>
+    <string name="inventaire">Inventaire</string>
 </resources>
