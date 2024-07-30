@@ -27,4 +27,9 @@
         android:name="sn.unchk.pharmaplus.ui.StockFragment"
         android:label="@string/title_stock"
         tools:layout="@layout/fragment_stock"/>
+    <fragment
+        android:id="@+id/navigation_finance"
+        android:name="sn.unchk.pharmaplus.ui.FinanceFragment"
+        android:label="@string/title_finance"
+        tools:layout="@layout/fragment_finance"/>
 </navigation>
