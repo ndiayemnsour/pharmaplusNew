@@ -36,6 +36,7 @@
 
 
     <ListView
+        android:id="@+id/ventelist"
         android:layout_width="357dp"
         android:layout_height="590dp"
         android:layout_marginStart="30dp"

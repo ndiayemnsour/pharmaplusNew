@@ -21,21 +21,29 @@
         android:textSize="14sp"
         android:textColor="@android:color/darker_gray" />
 
-    <!-- Prix du médicament -->
-    <TextView
-        android:id="@+id/prixTextView"
-        android:layout_width="wrap_content"
+    <!-- Section pour le prix et la quantité -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:textColor="@android:color/holo_green_dark"
-        android:layout_gravity="end" />
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
 
-    <!-- Quantité -->
-    <TextView
-        android:id="@+id/quantiteTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:textColor="@android:color/darker_gray"
-        android:layout_gravity="end" />
+        <!-- Prix du médicament -->
+        <TextView
+            android:id="@+id/prixTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_gravity="end" />
+
+        <!-- Quantité -->
+        <TextView
+            android:id="@+id/quantiteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_gravity="end" />
+    </LinearLayout>
 </LinearLayout>

@@ -26,7 +26,7 @@ class VenteFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val listView: ListView = view.findViewById(R.id.listView)
+        val listView: ListView = view.findViewById(R.id.ventelist)
 
         // Données fictives
         val dummyVenteItems = listOf(
@@ -36,30 +36,27 @@ class VenteFragment : Fragment() {
             VenteItem("Doxycycline", 90, "Capsule", "100mg", 180, "2025-01-01", "2027-01-01")
         )
 
-        // Utilisation de l'adaptateur personnalisé
         val adapter = VenteAdapter(requireContext(), dummyVenteItems)
         listView.adapter = adapter
     }
 }
 
 
-
-data class VenteItem (
-    val Nom: String,
-    val Prix: Int,
-    val Forme: String,
-    val Dosage: String,
-    val Quantite: Int,
-    val Date_creation: String,
-    val Date_expiration: String,
+data class VenteItem(
+    val nom: String,
+    val prix: Int,
+    val forme: String,
+    val dosage: String,
+    val quantite: Int,
+    val dateCreation: String,
+    val dateExpiration: String
 )
-
 
 class VenteAdapter(context: Context, venteItems: List<VenteItem>) :
     ArrayAdapter<VenteItem>(context, 0, venteItems) {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-        val view = convertView ?: LayoutInflater.from(context).inflate(R.layout.item_commande, parent, false)
+        val view = convertView ?: LayoutInflater.from(context).inflate(R.layout.item_vente, parent, false)
 
         val item = getItem(position)
 
@@ -68,11 +65,12 @@ class VenteAdapter(context: Context, venteItems: List<VenteItem>) :
         val prixTextView = view.findViewById<TextView>(R.id.prixTextView)
         val quantiteTextView = view.findViewById<TextView>(R.id.quantiteTextView)
 
-        nomTextView.text = item?.Nom
-        formeDosageTextView.text = "Forme : ${item?.Forme}, Dosage : ${item?.Dosage}"
-        prixTextView.text = "${item?.Prix} FCFA"
-        quantiteTextView.text = "Quantité : ${item?.Quantite}"
+        nomTextView.text = item?.nom
+        formeDosageTextView.text = "Forme : ${item?.forme}, Dosage : ${item?.dosage}"
+        prixTextView.text = "${item?.prix} FCFA"
+        quantiteTextView.text = "Quantité : ${item?.quantite}"
 
         return view
     }
 }
+
