@@ -16,7 +16,7 @@ class CommandeViewModel : ViewModel() {
             CommandeItem("Doxycycline", 8, 1800.0),
             CommandeItem("Loratadine", 8, 1800.0),
             CommandeItem("Aspirine", 8, 6800.0),
-            CommandeItem("Amoxicilline", 8, 8100.0),
+            CommandeItem("Amoxicilline", 8, 1800.0),
         )
     }
     val commandes: LiveData<List<CommandeItem>> = _commandes
